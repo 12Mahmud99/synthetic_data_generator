@@ -42,7 +42,7 @@ def single_well_generator(total_time,time_step, x0_mean, zeta, k, x_mu,T,
 
     return (positions, times)
 
-def double_wells_generator(total_time,time_step, x0_mean, zeta, left_well, right_well, barrier_height,tilt,T,boltzmann,num_of_simulations=1,x0_std=0,device='cuda'):
+def double_wells_generator(total_time,time_step, x0_mean, zeta, left_well, right_well, barrier_height,T,boltzmann,tilt=0,num_of_simulations=1,x0_std=0,device='cuda'):
         '''
         left_well: position of the left well
         right_well:position of the right well
