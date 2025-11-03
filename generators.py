@@ -29,7 +29,7 @@ def single_well_generator(total_time,time_step, x0_mean, zeta, k, x_mu,T,
 
     num_time_steps = int(total_time/time_step)  # calculates the number of time steps given the time
 
-    diffusion = torch.sqrt(torch.tensor(2*boltzmann*T/zeta),device=device)
+    diffusion = torch.sqrt(torch.tensor(2*boltzmann*T/zeta,device=device))
     dt_tensor = torch.tensor(time_step, device=device)
     positions = torch.zeros((num_of_simulations,num_time_steps),device=device)  # use default float32
     positions[:, 0] = x0
@@ -59,7 +59,7 @@ def double_wells_generator(total_time,time_step, x0_mean, zeta, left_well, right
 
         num_time_steps = int(total_time/time_step)  # calculates the number of time steps given the time
 
-        diffusion = torch.sqrt(torch.tensor(2*boltzmann*T/zeta),device=device)
+        diffusion = torch.sqrt(torch.tensor(2*boltzmann*T/zeta,device=device))
         dt_tensor = torch.tensor(time_step, device=device)
         positions = torch.zeros((num_of_simulations,num_time_steps),device=device)  # use default float32
         positions[:, 0] = x0
