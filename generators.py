@@ -49,7 +49,7 @@ def double_wells_generator(total_time,time_step, x0_mean, zeta, left_well, right
         '''
         
         midpoint = (left_well + right_well)/2.0 
-        a = (left_well-right_well)/2.0  
+        a = abs(left_well-right_well)/2.0  
 
         torch.set_default_device(device)
         if x0_std == 0:
