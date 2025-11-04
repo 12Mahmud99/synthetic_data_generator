@@ -72,8 +72,5 @@ df = pd.DataFrame(positions_np, columns=[f"{t:.4f}" for t in times_np])
 df.to_csv(csv_filename, index=False)
 EOF
 
-# Run the Python script
-python3 $TMP_PY
-
-# Optional: delete temp file
+python3 $TMP_PY 
 rm $TMP_PY
