@@ -46,6 +46,7 @@ def double_wells_generator(total_time,time_step, x0_mean, zeta, left_well, right
         '''
         left_well: position of the left well
         right_well:position of the right well
+        tilt: skewed left if tilt>0 and skewed right of tilt<0 
         '''
         
         midpoint = (left_well + right_well)/2.0 
