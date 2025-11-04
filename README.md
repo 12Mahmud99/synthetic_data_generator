@@ -1,5 +1,5 @@
 # synthetic_data_generator
-Use programmatically (see demo.py)
+Use programmatically (see demo.py and generators.py) 
 
 or run the bash script with the appropriate parameters and have the data saved as in a .csv file
 
