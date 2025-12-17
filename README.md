@@ -6,7 +6,7 @@ $$T = 300K$$
 
 $$t_0 = 0 s$$
 
-$$total time = 30 sec$$
+$$total \\ time = 30 sec$$
 
 
 Use programmatically (see demo.py and generators.py) 
