@@ -26,8 +26,12 @@ barrier $\approx 2K_BT $
 ![10-10](image-2.png)
 
 barrier $\approx 4K_BT $ 
-![alt text](image-3.png)
-![alt text](image-4.png)
+![3-3](image-3.png)
+![10-10](image-4.png)
+
+barrier $\approx 8K_BT $ 
+![3-3](image-7.png)
+![10-10](image-8.png)
 
 Use programmatically (see demo.py and generators.py) 
 
