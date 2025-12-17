@@ -1,4 +1,7 @@
 # synthetic_data_generator
+
+$K_B= 1.38 \times 10^-{11} \frac{kg \mu m^2}{s^2}$
+
 Use programmatically (see demo.py and generators.py) 
 
 or run the bash script with the appropriate parameters and have the data saved as in a .csv file
