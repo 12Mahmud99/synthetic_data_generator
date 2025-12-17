@@ -1,6 +1,6 @@
 # synthetic_data_generator
 
-$K_B= 1.38 \times 10^{-11} \frac{kg \times \mu m^2}{s^2}$
+$$K_B= 1.38 \times 10^{-11} \frac{kg \times \mu m^2}{s^2}$$
 $$T = 300K$$
 $$t_0 = 0 s$$
 total_time = $30 sec$
