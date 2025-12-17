@@ -8,7 +8,7 @@ $$t_0 = 0 s$$
 
 $$total \\ time = 30 sec$$
 
-![dw](image.png)
+![dw](image-1.png)
 
 Use programmatically (see demo.py and generators.py) 
 
