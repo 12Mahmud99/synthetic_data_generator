@@ -9,8 +9,7 @@ $$t_0 = 0 s$$
 $$total \\ time = 30 sec$$
 
 ![3-3](image-1.png)
-
-![10-10](image.png)
+![10-10](image-2.png)
 
 Use programmatically (see demo.py and generators.py) 
 
