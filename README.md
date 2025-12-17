@@ -15,6 +15,11 @@ $$t_0 = 0 s$$
 
 $$total \\ time = 30 sec$$
 
+barrier $\approx 0.5K_BT $ 
+
+![3-3](image-5.png)
+![10-10](image-6.png)
+
 barrier $\approx 2K_BT $ 
 
 ![3-3](image-1.png)
