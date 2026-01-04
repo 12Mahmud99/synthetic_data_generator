@@ -50,6 +50,7 @@ def double_wells_generator(total_time,time_step, x0_mean, zeta, left_well, right
         '''
         
         midpoint = (left_well + right_well)/2.0 
+        
         a = abs(left_well-right_well)/2.0  
 
         torch.set_default_device(device)
@@ -59,7 +60,6 @@ def double_wells_generator(total_time,time_step, x0_mean, zeta, left_well, right
             x0 = torch.normal(mean=torch.tensor(x0_mean), std=torch.tensor(x0_std), size=(num_of_simulations,))  # sample the initial position
 
         num_time_steps = int(total_time/time_step)  # calculates the number of time steps given the time
-
         diffusion = torch.sqrt(torch.tensor(2*boltzmann*T/zeta,device=device))
         dt_tensor = torch.tensor(time_step, device=device)
         positions = torch.zeros((num_of_simulations,num_time_steps),device=device)  # use default float32
@@ -70,7 +70,7 @@ def double_wells_generator(total_time,time_step, x0_mean, zeta, left_well, right
         for i in range(1, num_time_steps):
             x = positions[:,i-1]
             dUdx = barrier_height*(4*((x - midpoint)**3)/(a**4) - 4*(x - midpoint)/(a**2)) +tilt
-
+ 
             positions[:,i] = x - (dUdx/zeta)*dt_tensor + diffusion*dw[:,i-1]
 
         return (positions,times)
